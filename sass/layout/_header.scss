@@ -6,4 +6,15 @@
     background-repeat: no-repeat;
     background-size: cover;
     min-height: 400px;
+    position: relative;
+    
+    &:before {
+        content: '';
+        display: block;
+        width: 100%;
+        position: absolute;
+        bottom: -1.8rem;
+        height: 1.8rem;
+        background-color: #000;
+    }
 }
