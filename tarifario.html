@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+      integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog=="
+      crossorigin="anonymous" />
+   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+   <link rel="stylesheet" href="./css/main.css">
+   <link rel="stylesheet" href="./css/tarifario.css">
+   <title>Fortín</title>
+</head>
+
+<body>
+
+   <nav class="menu-container">
+      <div class="container">
+         <div class="menu-logo">
+            <a href="./" class="menu-logo__link">
+               <img src="./images/logo-01.png" class="menu-logo__image">
+            </a>
+         </div>
+
+         <div class="menu-navigation__bars">
+            <i class="fas fa-bars"></i>
+         </div>
+
+         <div class="menu-navigation__close">
+            <i class="fas fa-times"></i>
+         </div>
+
+         <ul class="menu-navigation">
+            <li class="menu-navigation__item"><a href="#" class="menu-navigation__link">Ir a la web</a></li>
+            <li class="menu-navigation__item"><a href="./register.html" class="menu-navigation__link">Registrarme</a>
+            </li>
+            <li class="menu-navigation__item">
+               <a href="" class="menu-navigation__link menu-navigation__link--account" id="btnAccountDesktop"><i
+                     class="fas fa-user"></i> Mi cuenta</a>
+               <ul class="submenu-navigation__desktop">
+                  <li class="submenu-navigation__item"><a href="#" class="submenu-navigation__link">Mi perfil</a></li>
+                  <li class="submenu-navigation__item"><a href="./carrito.html" class="submenu-navigation__link">Mis
+                        pedidos</a></li>
+                  <li class="submenu-navigation__item"><a href="#" class="submenu-navigation__link">Quejas</a></li>
+               </ul>
+            </li>
+            <li class="menu-navigation__item">
+               <a href="#" class="menu-navigation__link menu-navigation__carrito">
+                  <i class="fas fa-shopping-cart"></i>
+                  <span class="menu-carrito__cant">2</span>
+               </a>
+            </li>
+            <li class="menu-navigation__item">
+               <a href="#" class="menu-navigation__link">
+                  <form action="#" class="menu-navigation__form">
+                     <div class="menu-navigation__fieldset">
+                        <input class="menu-navigation__input" type="text" name="busqueda" id="busqueda"
+                           placeholder="Buscar">
+                        <button href="#" class="menu-icon__search">
+                           <i class="fas fa-search"></i>
+                        </button>
+                     </div>
+                  </form>
+               </a> <!--  -->
+            </li> <!--  -->
+         </ul> <!--  -->
+      </div> <!--  -->
+   </nav>
+
+   <main class="tarifario container-small">
+      <h1 class="tarifario__title">Tarifas y Formas de Pago</h1>
+
+      <section class="tarifario-content">
+
+         <ol class="tarifario-content__list">
+            <li class="tarifario-content__item">
+               <p class="tarifario-content__description">
+                  <span>Pagos vía Transferencia:</span><br>
+                  Bancos Itaú y Continental, la entrega dependerá de la confirmación de la
+                  operación.</p>
+               <table class="table table-bordered w-50">
+                  <thead>
+                     <tr>
+                        <th scope="col">ITAU</th>
+                        <th scope="col">Cta. Cte</th>
+                     </tr>
+                  </thead>
+                  <tbody>
+                     <tr>
+                        <td>Fortin S.A</td>
+                        <td>30003301/4</td>
+                     </tr>
+                  </tbody>
+               </table>
+               <table class="table table-bordered w-50">
+                  <thead>
+                     <tr>
+                        <th scope="col">CONTINENTAL</th>
+                        <th scope="col">Cta. Cte</th>
+                     </tr>
+                  </thead>
+                  <tbody>
+                     <tr>
+                        <td>Fortin S.A</td>
+                        <td>90 23 877463-05</td>
+                     </tr>
+                  </tbody>
+               </table>
+               <p class="tarifario-content__description"><span>RUC Fortin S.A: </span>80015046-5</p>
+            </li>
+            <li class="tarifario-content__item">
+               <p class="tarifario-content__description">
+                  Pagos vía cheques, previa referencias del titular, Nombre del Banco, Número de Cuenta y nombre del
+                  Ejecutivo.</p>
+               <div class="tarifario-content__images">
+                  <div class="tarifario-content__media">
+                     <button class="tarifario-content__link">
+                        <img
+                           src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8a/Banco_Ita%C3%BA_logo.svg/1011px-Banco_Ita%C3%BA_logo.svg.png"
+                           alt="" class="tarifario-content__image">
+                     </button>
+                  </div>
+                  <div class="tarifario-content__media">
+                     <button class="tarifario-content__link">
+                        <img src="https://www.guiaslatinas.com.py/sfiles/pagina_amarilla/bco_vision.jpg" alt=""
+                           class="tarifario-content__image">
+                     </button>
+                  </div>
+                  <div class="tarifario-content__media">
+                     <button class="tarifario-content__link">
+                        <img
+                           src="https://www.bancard.com.py/s4/public/billing_brands_logos/1655c8f2b4ee3107d93c127efa899bfb.png.big.png"
+                           alt="" class="tarifario-content__image">
+                     </button>
+                  </div>
+                  <div class="tarifario-content__media">
+                     <button class="tarifario-content__link">
+                        <img
+                           src="https://i2.wp.com/logoroga.com/wp-content/uploads/2013/03/Sudameris-demo.png?fit=1000%2C1000&ssl=1"
+                           alt="" class="tarifario-content__image">
+                     </button>
+                  </div>
+               </div>
+            </li>
+            <li class="tarifario-content__item">
+               <p class="tarifario-content__description">
+                  <span>Pago en efectivo:</span><br>Contra entrega del producto solicitado. Plazo máximo de entrega: 48
+                  horas.</p><br>
+            </li>
+            <li class="tarifario-content__item mt-0">
+               <p class="tarifario-content__description mt-0">
+                  <span>Caso de Incumplimiento en los tiempos de entrega por factores de fuerza mayor:</span><br>Fortin
+                  se
+                  compromete en retornar de inmediato el monto transferido.</p><br>
+            </li>
+         </ol>
+      </section>
+   </main>
+
+   <!-- Modal Summary -->
+   <section class="summaryBody active" id="summaryBody">
+      <div class="summaryBody__overlay" id="summaryOverlay"></div>
+
+      <header class="summaryBody__header">
+         <h3 class="summaryBody__title">Resumen de compras <span>(1)</span></h3>
+         <button class="summaryBody__close" id="btnSummaryClose">
+            <i class="fas fa-times"></i>
+         </button>
+      </header>
+
+      <div class="summaryBody__item">
+         <div class="summaryBody__media">
+            <img src="./images/gaseosas-01.jpg" alt="" class="summaryBody__image">
+         </div>
+         <div class="summaryBody__info">
+            <span class="summaryBody__product">Gaseosas Citrus 300ml</span>
+            <span class="summaryBody__price">Gs. 85.000</span>
+
+            <div class="summaryBody__action">
+               <span class="summaryBody__cant">
+                  <i class="fas fa-times"></i>
+                  <span>100</span>
+               </span>
+               <button class="summaryBody__delete">
+                  <i class="fas fa-trash"></i>
+               </button>
+            </div>
+         </div>
+      </div>
+
+      <div class="summaryTotal">
+         <div class="summaryTotal__name">
+            Subtotal
+         </div>
+         <div class="summaryTotal__price">
+            Gs. 9.000
+         </div>
+      </div>
+
+      <footer class="summaryBody__footer">
+         <a href="./carrito.html" class="summaryBody__button">Ver carrito</a>
+         <a href="./successful.html" class="summaryBody__button">Finalizar compra</a>
+      </footer>
+
+   </section>
+
+   <div class="summaryBtn">
+      <button type="button" class="summaryBtn__button" id="summaryButton">
+         <i class="fas fa-tags"></i>
+      </button>
+   </div>
+
+   <footer class="footer">
+      <div class="container">
+         <div class="footer-logo">
+            <a href="#" class="footer-logo__link">
+               <img src="./images/logo-02.png" alt="" class="footer-logo__image">
+            </a>
+         </div>
+         <ul class="footer-social">
+            <li class="footer-social__item"><a href="#" class="footer-social__link"><i
+                     class="fab fa-facebook-square"></i></a></li>
+            <li class="footer-social__item"><a href="#" class="footer-social__link"><i
+                     class="fab fa-instagram-square"></i></a></li>
+            <li class="footer-social__item"><a href="#" class="footer-social__link"><i
+                     class="fab fa-twitter-square"></i></a></li>
+            <li class="footer-social__item"><a href="#" class="footer-social__link"><i class="fab fa-whatsapp"></i></a>
+            </li>
+         </ul>
+      </div>
+      <div class="footer-copy">
+         <span class="footer-copy__span">Diseño y desarrollo por <a href="#" class="footer-copy__link"
+               target="_blank">FINCREATIVO</a></span>
+      </div>
+   </footer>
+
+   <script src="./js/navigation.js"></script>
+   <script>
+      const summaryButton = document.querySelector('#summaryButton');
+      const btnSummaryClose = document.querySelector('#btnSummaryClose');
+      const summaryBody = document.querySelector('#summaryBody');
+      const summaryOverlay = document.querySelector('#summaryOverlay');
+
+      summaryButton.addEventListener('click', () => {
+         summaryBody.classList.toggle('active');
+         summaryOverlay.classList.toggle('active');
+      });
+
+      summaryOverlay.addEventListener('click', (e) => {
+         e.target.parentElement.classList.remove('active');
+      });
+
+      btnSummaryClose.addEventListener('click', e => {
+         e.target.parentElement.parentElement.parentElement.classList.remove('active');
+      })
+   </script>
+
+</body>
+
+</html>

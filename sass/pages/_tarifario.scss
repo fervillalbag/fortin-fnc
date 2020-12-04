@@ -1,0 +1,93 @@
+
+.tarifario {
+   padding-top: 4rem;
+   padding-bottom: 4rem;
+
+   &__title {
+      text-align: center;
+   }
+
+   &__last-title {
+      font-weight: 400;
+      font-size: 1rem;
+      text-decoration: underline;
+   }
+
+   &-content {
+      margin-top: 2rem;
+
+      &__title {
+         font-size: 1.7rem;
+         margin-top: 3rem;
+      }
+
+      &__description {
+         font-size: 1.2rem;
+         margin-top: 1.25rem;
+         margin-bottom: 1.25rem;
+
+         span {
+            font-weight: 700;
+         }
+      }
+
+      &__item {
+         margin-top: 2rem;
+      }
+
+      &__images {
+         display: grid;
+         grid-template-columns: repeat(4, 60px);
+         grid-column-gap: 0.5rem;
+         align-items: center;
+      }
+
+      &__link {
+         border: none;
+         background-color: transparent;
+         padding: 0;
+
+         &:focus,
+         &:active {
+            outline: none;
+         }
+      }
+
+      &__media {
+         border-radius: 15px;
+         overflow: hidden;
+         border: 1px solid #dadada;
+         padding: 5px;
+         display: flex;
+         align-items: center;
+         justify-content: center;
+      }
+
+      &__image {
+         border-radius: 15px;
+         display: block;
+         width: 100%;
+      }
+   }
+
+   ul {
+      list-style-type: circle;
+      padding-left: 2rem;
+      margin-top: -2rem;
+   }
+}
+
+.pago-express {
+   display: grid;
+   align-items: center;
+   grid-template-columns: 200px 100px;
+   margin-top: -2rem;
+
+   .tarifario-content__link {
+      display: inline-block;
+   }
+
+   &__image {
+      width: 100%;
+   }
+}

@@ -1,0 +1,58 @@
+
+.general__grid {
+   margin-top: 4rem;
+   margin-bottom: 4rem;
+
+   .cant-item {
+      text-align: center;
+   }
+}
+
+.table-f {
+
+   td, th {
+      font-size: 0.9rem;
+   }
+}
+
+.status-span,
+.pay-span {
+   border-radius: 4px;
+   display: inline-block;
+   padding: 0.2rem 0.4rem;
+   font-size: 0.8rem;
+   color: white;
+}
+
+.status-span {
+   background-color: rgb(223, 172, 54);
+}
+
+.pay-span {
+   background-color: rgb(226, 51, 51);
+}
+
+.action__button {
+   display: inline-block;
+   padding: 0.15rem 0.35rem;
+   color: white;
+   border-radius: 4px;
+   font-size: 0.8rem;
+}
+
+.action__button:hover {
+   color: white;
+}
+
+.action__button:nth-child(1) {
+   background-color: rgb(46, 101, 230);
+}
+
+.action__button:nth-child(2) {
+   background-color: rgb(226, 51, 51);
+   padding: 0.15rem 0.5rem;
+}
+
+.table-responsive-f {
+   //overflow-x: scroll;
+}

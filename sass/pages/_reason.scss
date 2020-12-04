@@ -1,0 +1,164 @@
+/* Reason */
+
+.reason {
+    padding-bottom: 3.5rem;
+}
+
+.reason-header {
+    background-color: $principalColor;
+    padding-top: 1rem;
+    padding-bottom: 3rem;
+}
+
+.reason__title {
+    @extend .login-view__title;
+    margin-bottom: 0;
+}
+
+.reason-form {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
+
+.reason-container__checkbox {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 2rem;
+    background-color: $colorWhite;
+    padding: 2rem;
+    @include responsive(768px) {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(5, auto);
+        padding: 2rem;
+    }
+}
+
+.reason-fieldset {
+    display: grid;
+    grid-template-columns: 40px 1fr;
+    align-items: center;
+}
+
+.reason-fieldset:nth-child(1) {
+    @include responsive(768px) {
+        grid-column: 1 / 2;
+        grid-row: 1 / 2;
+    }
+}
+
+.reason-fieldset:nth-child(2) {
+    @include responsive(768px) {
+        grid-column: 2 / 3;
+        grid-row: 1 / 2;
+    }
+}
+
+.reason-fieldset:nth-child(3) {
+    @include responsive(768px) {
+        grid-column: 1 / 2;
+        grid-row: 2 / 3;
+    }
+}
+
+.reason-fieldset:nth-child(4) {
+    @include responsive(768px) {
+        grid-column: 2 / 3;
+        grid-row: 2 / 3;
+    }
+}
+
+.reason-fieldset:nth-child(5) {
+    @include responsive(768px) {
+        grid-column: 1 / 2;
+        grid-row: 3 / 4;
+    }
+}
+
+.reason-fieldset:nth-child(6) {
+    @include responsive(768px) {
+        grid-column: 2 / 3;
+        grid-row: 3 / 4;
+    }
+}
+
+.reason-fieldset:nth-child(7) {
+    @include responsive(768px) {
+        grid-column: 1 / 2;
+        grid-row: 4 / 5;
+    }
+}
+
+.reason-field__textarea {
+    @include responsive(768px) {
+        grid-column: 1 / 3;
+        grid-row: 5 / 6;
+    }
+}
+
+.reason-fieldset__message {
+    grid-column: 1 / 5;
+    @include responsive(768px) {
+        grid-column: 1 / 3;
+    }
+}
+
+.reason-field__textarea {
+    display: block;
+    width: 100%;
+    outline: none;
+    border: 1px solid $tertiaryColor;
+    padding: 1rem;
+    height: 7rem;
+}
+
+.reason-label {
+    @extend .register-view__label;
+}
+
+.reason-input__checkbox {
+    display: block;
+    width: 40px;
+    height: 40px;
+}
+
+.reason-action {
+    display: flex;
+    justify-content: center;
+    margin-top: 3rem;
+}
+
+.reason-action__button,
+.reason-action__link {
+    @include btn(0.8rem, 5rem, $principalColor, $lightPrincipalColor, 1.1rem);
+    display: block;
+    margin-right: 0.5rem;
+    margin-left: 0.5rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    cursor: pointer;
+    transition: 0.3s;
+    will-change: background-color;
+}
+
+.reason-action__button:hover,
+.reason-action__link:hover {
+    background-color: $principalColorHover;
+}
+
+.register-footer {
+    .register-view__fieldset--map,
+    .register-view__fieldset--info {
+        @include responsive(750px) {
+            grid-column: 1 / 4;
+        }
+    }
+
+    .register-view__fieldset--submit {
+        margin-top: 1rem;
+    }
+
+    .register-view__label {
+        padding-bottom: 0;
+    }
+}
+

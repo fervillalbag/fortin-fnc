@@ -1,0 +1,21 @@
+
+ul {
+   margin: 0;
+   padding: 0;
+   list-style: none;
+}
+
+.container,
+.container-p {
+   max-width: 1000px;
+   width: 92%;
+   margin-left: auto;
+   margin-right: auto;
+}
+
+.container-small {
+   max-width: 800px;
+   width: 80%;
+   margin-left: auto;
+   margin-right: auto;
+}

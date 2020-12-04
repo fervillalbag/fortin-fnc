@@ -1,0 +1,524 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+      integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog=="
+      crossorigin="anonymous" />
+   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+   <link rel="stylesheet" href="./css/main.css">
+   <title>Fortín</title>
+</head>
+
+<body>
+
+   <nav class="menu-container">
+      <div class="container">
+         <div class="menu-logo">
+            <a href="./" class="menu-logo__link">
+               <img src="./images/logo-01.png" class="menu-logo__image">
+            </a>
+         </div>
+
+         <div class="menu-navigation__bars">
+            <i class="fas fa-bars"></i>
+         </div>
+
+         <div class="menu-navigation__close">
+            <i class="fas fa-times"></i>
+         </div>
+
+         <ul class="menu-navigation">
+            <li class="menu-navigation__item"><a href="#" class="menu-navigation__link">Ir a la web</a></li>
+            <li class="menu-navigation__item"><a href="./register.html" class="menu-navigation__link">Registrarme</a>
+            </li>
+            <li class="menu-navigation__item">
+               <a href="" class="menu-navigation__link menu-navigation__link--account" id="btnAccountDesktop"><i
+                     class="fas fa-user"></i> Mi cuenta</a>
+               <ul class="submenu-navigation__desktop">
+                  <li class="submenu-navigation__item"><a href="#" class="submenu-navigation__link">Mi perfil</a></li>
+                  <li class="submenu-navigation__item"><a href="./carrito.html" class="submenu-navigation__link">Mis
+                        pedidos</a></li>
+                  <li class="submenu-navigation__item"><a href="#" class="submenu-navigation__link">Quejas</a></li>
+               </ul>
+            </li>
+            <li class="menu-navigation__item">
+               <a href="#" class="menu-navigation__link menu-navigation__carrito">
+                  <i class="fas fa-shopping-cart"></i>
+                  <span class="menu-carrito__cant">2</span>
+               </a>
+            </li>
+            <li class="menu-navigation__item">
+               <a href="#" class="menu-navigation__link">
+                  <form action="#" class="menu-navigation__form">
+                     <div class="menu-navigation__fieldset">
+                        <input class="menu-navigation__input" type="text" name="busqueda" id="busqueda"
+                           placeholder="Buscar">
+                        <button href="#" class="menu-icon__search">
+                           <i class="fas fa-search"></i>
+                        </button>
+                     </div>
+                  </form>
+               </a> <!--  -->
+            </li> <!--  -->
+         </ul> <!--  -->
+      </div> <!--  -->
+   </nav>
+
+   <header class="header"></header>
+
+   <!-- Modal Summary -->
+   <section class="summaryBody active" id="summaryBody">
+      <div class="summaryBody__overlay" id="summaryOverlay"></div>
+
+      <header class="summaryBody__header">
+         <h3 class="summaryBody__title">Resumen de compras <span>(1)</span></h3>
+         <button class="summaryBody__close" id="btnSummaryClose">
+            <i class="fas fa-times"></i>
+         </button>
+      </header>
+
+      <!-- tr (productos) -->
+      <div class="summaryBody__item">
+         <div class="summaryBody__media">
+            <img src="./images/gaseosas-01.jpg" alt="" class="summaryBody__image">
+         </div>
+         <div class="summaryBody__info">
+            <span class="summaryBody__product">Gaseosas Citrus 300ml</span>
+            <span class="summaryBody__price">Gs. 85.000</span>
+
+            <div class="summaryBody__action">
+               <span class="summaryBody__cant">
+                  <i class="fas fa-times"></i>
+                  <span>100</span>
+               </span>
+               <button class="summaryBody__delete">
+                  <i class="fas fa-trash"></i>
+               </button>
+            </div>
+         </div>
+      </div>
+      <!-- /.tr -->
+
+      <!-- tr (resultado/total) -->
+      <div class="summaryTotal">
+         <div class="summaryTotal__name">
+            Subtotal
+         </div>
+         <div class="summaryTotal__price">
+            Gs. 9.000
+         </div>
+      </div>
+      <!-- /.tr -->
+
+      <footer class="summaryBody__footer">
+         <a href="./carrito.html" class="summaryBody__button">Ver carrito</a>
+         <a href="./successful.html" class="summaryBody__button">Finalizar compra</a>
+      </footer>
+
+   </section>
+
+   <div class="summaryBtn">
+      <button type="button" class="summaryBtn__button" id="summaryButton">
+         <i class="fas fa-tags"></i>
+      </button>
+   </div>
+
+   <!-- Cuerpo del Modal de Escala de Precios -->
+
+   <div class="scaleBody__overlay" id="scaleBodyOverlay"></div>
+   <div class="scaleBody" id="scaleBody">
+      <!-- Contenido -->
+      <div>
+         <img src="./images/image-example.jpg" style="display: block; width: 100%" alt="">
+      </div>
+      <div class="scaleBody__action" id="scaleBodyClose">
+         <button class="scaleBody__close">Cerrar</button>
+      </div>
+   </div>
+
+   <section class="products">
+      <div class="products-header">
+         <h3 class="products-header__title">Nuestros productos | Agua</h3>
+      </div>
+
+      <main class="products-header__grid">
+
+         <div class="products-header__navigation container-footer">
+            <span class="products-bread__span">
+               <a href="./categories.html" class="products-header__bread">Inicio</a>
+               /
+               <a href="#" class="products-header__bread active">Agua</a>
+            </span>
+            <button class="products-bread__link" id="scalePriceBtn">ver escala de precios</button>
+         </div>
+
+         <div class="container-p">
+
+            <div class="products-header__item">
+               <div class="products-header__picture">
+                  <img src="./images/torrente/agua-01.jpg" alt="" class="products-header__image">
+               </div>
+               <div class="products-header__info">
+
+                  <span class="products-header__cod">Cód: 78401037</span>
+                  <h4 class="products-header__name">Bidon 5 litros</h4>
+                  <span class="products-header__price">Gs. 85.000</span>
+                  <span class="products-header__iva">(IVA incluido)</span>
+
+                  <span class="products-header__cant-subtitle">(unitario)</span>
+
+               </div>
+
+               <div class="header-products__footer">
+
+                  <form class="products-header__form">
+                     <div class="products-header__container">
+                        <div class="products-header__fieldset">
+                           <button class="products-header__button-more">
+                              <i class="fas fa-plus"></i>
+                           </button>
+                        </div>
+                        <div class="products-header__fieldset">
+                           <input type="text" class="products-header__input" disabled value="1">
+                        </div>
+                        <div class="products-header__fieldset">
+                           <button class="products-header__button-minus">
+                              <i class="fas fa-minus"></i>
+                           </button>
+                        </div>
+
+                        <div class="products-header__fieldset">
+                           <input class="products-header__input-checkbox" id="agua-1" type="checkbox">
+                           <label for="agua-1" class="products-header__label">Pedir por unidad</label>
+                        </div>
+                     </div>
+
+                     <div class="products-header__action">
+                        <button class="products-header__submit">Añadir al carrito</button>
+                     </div>
+
+                  </form>
+               </div>
+            </div>
+
+            <div class="products-header__item">
+               <div class="products-header__picture">
+                  <img src="./images/torrente/agua-02.jpg" alt="" class="products-header__image">
+               </div>
+               <div class="products-header__info">
+
+                  <span class="products-header__cod">Cód: 78401037</span>
+                  <h4 class="products-header__name">Bidon 10 litros</h4>
+                  <span class="products-header__price">Gs. 85.000</span>
+                  <span class="products-header__iva">(IVA incluido)</span>
+
+                  <span class="products-header__cant-subtitle">(unitario)</span>
+               </div>
+
+               <div class="header-products__footer">
+
+                  <form class="products-header__form">
+                     <div class="products-header__container">
+                        <div class="products-header__fieldset">
+                           <button class="products-header__button-more">
+                              <i class="fas fa-plus"></i>
+                           </button>
+                        </div>
+                        <div class="products-header__fieldset">
+                           <input type="text" class="products-header__input" disabled value="1">
+                        </div>
+                        <div class="products-header__fieldset">
+                           <button class="products-header__button-minus">
+                              <i class="fas fa-minus"></i>
+                           </button>
+                        </div>
+
+                        <div class="products-header__fieldset">
+                           <input class="products-header__input-checkbox" id="agua-2" type="checkbox">
+                           <label for="agua-2" class="products-header__label">Pedir por unidad</label>
+                        </div>
+                     </div>
+
+                     <div class="products-header__action">
+                        <button class="products-header__submit">Añadir al carrito</button>
+                     </div>
+
+                  </form>
+               </div>
+            </div>
+
+            <div class="products-header__item">
+               <div class="products-header__picture">
+                  <img src="./images/torrente/agua-03.jpg" alt="" class="products-header__image">
+               </div>
+               <div class="products-header__info">
+
+                  <span class="products-header__cod">Cód: 78401037</span>
+                  <h4 class="products-header__name">500ml Tónica</h4>
+                  <span class="products-header__price">Gs. 85.000</span>
+                  <span class="products-header__iva">(IVA incluido)</span>
+
+                  <span class="products-header__cant-subtitle">Cantidad de caja x6</span>
+               </div>
+
+               <div class="header-products__footer">
+
+                  <form class="products-header__form">
+                     <div class="products-header__container">
+                        <div class="products-header__fieldset">
+                           <button class="products-header__button-more">
+                              <i class="fas fa-plus"></i>
+                           </button>
+                        </div>
+                        <div class="products-header__fieldset">
+                           <input type="text" class="products-header__input" disabled value="1">
+                        </div>
+                        <div class="products-header__fieldset">
+                           <button class="products-header__button-minus">
+                              <i class="fas fa-minus"></i>
+                           </button>
+                        </div>
+
+                        <div class="products-header__fieldset">
+                           <input class="products-header__input-checkbox" id="agua-3" type="checkbox">
+                           <label for="agua-3" class="products-header__label">Pedir por unidad</label>
+                        </div>
+                     </div>
+
+                     <div class="products-header__action">
+                        <button class="products-header__submit">Añadir al carrito</button>
+                     </div>
+
+                  </form>
+               </div>
+            </div>
+
+            <div class="products-header__item">
+               <div class="products-header__picture">
+                  <img src="./images/torrente/agua-04.jpg" alt="" class="products-header__image">
+               </div>
+               <div class="products-header__info">
+
+                  <span class="products-header__cod">Cód: 78401037</span>
+                  <h4 class="products-header__name">2 Litros con gas, sin gas</h4>
+                  <span class="products-header__price">Gs. 85.000</span>
+                  <span class="products-header__iva">(IVA incluido)</span>
+
+                  <span class="products-header__cant-subtitle">Cantidad de caja x6</span>
+               </div>
+
+               <div class="header-products__footer">
+
+                  <form class="products-header__form">
+                     <div class="products-header__container">
+                        <div class="products-header__fieldset">
+                           <button class="products-header__button-more">
+                              <i class="fas fa-plus"></i>
+                           </button>
+                        </div>
+                        <div class="products-header__fieldset">
+                           <input type="text" class="products-header__input" disabled value="1">
+                        </div>
+                        <div class="products-header__fieldset">
+                           <button class="products-header__button-minus">
+                              <i class="fas fa-minus"></i>
+                           </button>
+                        </div>
+
+                        <div class="products-header__fieldset">
+                           <input class="products-header__input-checkbox" id="agua-4" type="checkbox">
+                           <label for="agua-4" class="products-header__label">Pedir por unidad</label>
+                        </div>
+                     </div>
+
+                     <div class="products-header__action">
+                        <button class="products-header__submit">Añadir al carrito</button>
+                     </div>
+
+                  </form>
+               </div>
+            </div>
+
+            <div class="products-header__item">
+               <div class="products-header__picture">
+                  <img src="./images/torrente/agua-05.jpg" alt="" class="products-header__image">
+               </div>
+               <div class="products-header__info">
+
+                  <span class="products-header__cod">Cód: 78401037</span>
+                  <h4 class="products-header__name">500ml con gas, sin gas</h4>
+                  <span class="products-header__price">Gs. 85.000</span>
+                  <span class="products-header__iva">(IVA incluido)</span>
+
+                  <span class="products-header__cant-subtitle">Cantidad de caja x12</span>
+               </div>
+
+               <div class="header-products__footer">
+
+                  <form class="products-header__form">
+                     <div class="products-header__container">
+                        <div class="products-header__fieldset">
+                           <button class="products-header__button-more">
+                              <i class="fas fa-plus"></i>
+                           </button>
+                        </div>
+                        <div class="products-header__fieldset">
+                           <input type="text" class="products-header__input" disabled value="1">
+                        </div>
+                        <div class="products-header__fieldset">
+                           <button class="products-header__button-minus">
+                              <i class="fas fa-minus"></i>
+                           </button>
+                        </div>
+
+                        <div class="products-header__fieldset">
+                           <input class="products-header__input-checkbox" id="agua-5" type="checkbox">
+                           <label for="agua-5" class="products-header__label">Pedir por unidad</label>
+                        </div>
+                     </div>
+
+                     <div class="products-header__action">
+                        <button class="products-header__submit">Añadir al carrito</button>
+                     </div>
+
+                  </form>
+               </div>
+            </div>
+
+            <div class="products-header__item">
+               <div class="products-header__picture">
+                  <img src="./images/torrente/agua-06.jpg" alt="" class="products-header__image">
+               </div>
+               <div class="products-header__info">
+
+                  <span class="products-header__cod">Cód: 78401037</span>
+                  <h4 class="products-header__name">500ml con gas, sin gas pico sport</h4>
+                  <span class="products-header__price">Gs. 85.000</span>
+                  <span class="products-header__iva">(IVA incluido)</span>
+
+                  <span class="products-header__cant-subtitle">Cantidad de caja x12</span>
+               </div>
+
+               <div class="header-products__footer">
+
+                  <form class="products-header__form">
+                     <div class="products-header__container">
+                        <div class="products-header__fieldset">
+                           <button class="products-header__button-more">
+                              <i class="fas fa-plus"></i>
+                           </button>
+                        </div>
+                        <div class="products-header__fieldset">
+                           <input type="text" class="products-header__input" disabled value="1">
+                        </div>
+                        <div class="products-header__fieldset">
+                           <button class="products-header__button-minus">
+                              <i class="fas fa-minus"></i>
+                           </button>
+                        </div>
+
+                        <div class="products-header__fieldset">
+                           <input class="products-header__input-checkbox" id="agua-6" type="checkbox">
+                           <label for="agua-6" class="products-header__label">Pedir por unidad</label>
+                        </div>
+                     </div>
+
+                     <div class="products-header__action">
+                        <button class="products-header__submit">Añadir al carrito</button>
+                     </div>
+
+                  </form>
+               </div>
+            </div>
+
+            <div class="products-header__item">
+               <div class="products-header__picture">
+                  <img src="./images/torrente/agua-07.jpg" alt="" class="products-header__image">
+               </div>
+               <div class="products-header__info">
+
+                  <span class="products-header__cod">Cód: 78401037</span>
+                  <h4 class="products-header__name">1 Litro pico sport</h4>
+                  <span class="products-header__price">Gs. 85.000</span>
+                  <span class="products-header__iva">(IVA incluido)</span>
+
+                  <span class="products-header__cant-subtitle">Cantidad de caja x12</span>
+               </div>
+
+               <div class="header-products__footer">
+
+                  <form class="products-header__form">
+                     <div class="products-header__container">
+                        <div class="products-header__fieldset">
+                           <button class="products-header__button-more">
+                              <i class="fas fa-plus"></i>
+                           </button>
+                        </div>
+                        <div class="products-header__fieldset">
+                           <input type="text" class="products-header__input" disabled value="1">
+                        </div>
+                        <div class="products-header__fieldset">
+                           <button class="products-header__button-minus">
+                              <i class="fas fa-minus"></i>
+                           </button>
+                        </div>
+
+                        <div class="products-header__fieldset">
+                           <input class="products-header__input-checkbox" id="agua-7" type="checkbox">
+                           <label for="agua-7" class="products-header__label">Pedir por unidad</label>
+                        </div>
+                     </div>
+
+                     <div class="products-header__action">
+                        <button class="products-header__submit">Añadir al carrito</button>
+                     </div>
+
+                  </form>
+               </div>
+            </div>
+
+         </div>
+
+         <div class="container-footer">
+            <div class="products-footer">
+               <a href="#" class="products-footer__btn">Ver carrito</a>
+            </div>
+         </div>
+      </main>
+   </section>
+
+   <footer class="footer">
+      <div class="container">
+         <div class="footer-logo">
+            <a href="#" class="footer-logo__link">
+               <img src="./images/logo-02.png" alt="" class="footer-logo__image">
+            </a>
+         </div>
+         <ul class="footer-social">
+            <li class="footer-social__item"><a href="#" class="footer-social__link"><i
+                     class="fab fa-facebook-square"></i></a></li>
+            <li class="footer-social__item"><a href="#" class="footer-social__link"><i
+                     class="fab fa-instagram-square"></i></a></li>
+            <li class="footer-social__item"><a href="#" class="footer-social__link"><i
+                     class="fab fa-twitter-square"></i></a></li>
+            <li class="footer-social__item"><a href="#" class="footer-social__link"><i class="fab fa-whatsapp"></i></a>
+            </li>
+         </ul>
+      </div>
+      <div class="footer-copy">
+         <span class="footer-copy__span">Diseño y desarrollo por <a href="#" class="footer-copy__link"
+               target="_blank">FINCREATIVO</a></span>
+      </div>
+   </footer>
+
+   <script src="./js/navigation.js"></script>
+   <script src="./js/summary.js"></script>
+
+</body>
+
+</html>

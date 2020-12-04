@@ -1,0 +1,200 @@
+/* Register */
+
+.register-view {
+    padding-top: 2rem;
+    padding-bottom: 4rem;
+    background-color: $lightPrincipalColor;
+}
+
+.register-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(7, auto);
+    grid-column-gap: 2.5rem;
+    @include responsive(900px) {
+        grid-column-gap: 1.5rem;
+    }
+    @include responsive(768px) {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(8, auto);
+    }
+}
+
+.register-view__title {
+    @extend .login-view__title;
+    color: $darkColor;
+    margin-bottom: 1.5rem;
+}
+
+.register-view__fieldset {
+    margin-bottom: 0.75rem;
+}
+
+.register-view__fieldset:nth-child(1) {
+    @include responsive(768px) {
+        grid-column: 1 / 2;
+        grid-row: 1 / 2;
+    }
+}
+
+.register-view__fieldset:nth-child(2) {
+    @include responsive(768px) {
+        grid-column: 1 / 2;
+        grid-row: 2 / 3;
+    }
+}
+
+.register-view__fieldset:nth-child(3) {
+    @include responsive(768px) {
+        grid-column: 1 / 2;
+        grid-row: 3 / 4;
+    }
+}
+
+.register-view__fieldset:nth-child(4) {
+    @include responsive(768px) {
+        grid-column: 1 / 2;
+        grid-row: 4 / 5;
+    }
+}
+
+.register-view__fieldset:nth-child(5) {
+    @include responsive(768px) {
+        grid-column: 1 / 2;
+        grid-row: 5 / 6;
+    }
+}
+
+.register-view__fieldset:nth-child(6) {
+    @include responsive(768px) {
+        grid-column: 1 / 2;
+        grid-row: 6 / 7;
+    }
+}
+
+.register-view__fieldset:nth-child(7) {
+    @include responsive(768px) {
+        grid-column: 1 / 2;
+        grid-row: 7 / 8;
+    }
+}
+
+.register-view__fieldset:nth-child(8) {
+    @include responsive(768px) {
+        grid-column: 1 / 2;
+        grid-row: 8 / 9;
+    }
+}
+
+
+/* Form Childs */
+
+.register-view__fieldset--client {
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+}
+
+.register-view__business-name {
+    grid-column: 1 / 2;
+    grid-row: 3 / 4;
+}
+
+.register-view__fieldset--business-address {
+    grid-column: 2 / 3;
+    grid-row: 3 / 4;
+}
+
+.register-view__fieldset--business-city {
+    grid-column: 3 / 4;
+    grid-row: 3 / 4;
+}
+
+.register-view__fieldset--neighborhood {
+    grid-column: 1 / 2;
+    grid-row: 4 / 5;
+}
+
+.register-view__fieldset--map {
+    grid-column: 1 / 4;
+    grid-row: 5 / 6;
+}
+
+.register-view__fieldset--info {
+    grid-column: 1 / 4;
+    grid-row: 6 / 7;
+}
+
+.register-view__fieldset--submit {
+    grid-column: 1 / 2;
+    grid-row: 7 / 8;
+}
+
+/* Register Footer */
+
+.register-footer {
+    margin-top: 2rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+/* Checkboxes Styles */
+
+.register-view__checkbox-container {
+    display: flex;
+    align-items: center;
+
+    > div {
+        display: flex;
+        align-items: center;
+    }
+}
+
+.register-view__input--checkbox {
+    width: 20px;
+    height: 20px;
+    border-radius: 0;
+    display: block;
+}
+
+.register-view__label {
+    display: block;
+    text-transform: uppercase;
+    font-weight: 300;
+    color: $tertiaryColor;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    padding-left: 1rem;
+    font-size: 0.85rem;
+    margin-right: 0.5rem;
+}
+
+.register-view__politics {
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+.register-view__input {
+    @include input($secondaryColor, transparent, $tertiaryColor);
+}
+
+.register-view__submit {
+    @include btn(0.7rem, 5rem, $principalColor, $lightPrincipalColor, 1.1rem);
+    width: 100%;
+    cursor: pointer;
+    transition: 0.3s;
+    will-change: background-color;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.register-view__submit:hover {
+    background-color: $principalColorHover;
+}
+
+.reason-container__title {
+    text-align: center;
+    font-weight: 400;
+    font-size: 1.6rem;
+    text-transform: uppercase;
+    color: $darkColor;
+}

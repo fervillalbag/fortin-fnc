@@ -1,0 +1,150 @@
+
+
+.products-main {
+   @include responsive(780px) {
+      grid-template-columns: 200px 1fr;
+   }
+}
+
+.products-header__title:first-of-type {
+   margin-top: 0;
+}
+
+.profile-header__title {
+   background-color: $principalColor;
+   margin-top: 0;
+   margin-bottom: 0;
+   padding-top: 0.85rem;
+   padding-bottom: 0.85rem;
+   padding-left: 4rem;
+   text-align: left;
+   margin-top: 2rem;
+   text-transform: uppercase;
+   font-weight: 400;
+   color: $lightPrincipalColor;
+   font-size: 1.4rem;
+}
+
+.profile-header__text {
+   display: block;
+   font-weight: 400;
+   font-size: 0.9rem;
+   margin-top: 2rem;
+   padding-left: 5rem;
+   @include responsive(768px) {
+      padding-left: 1rem;
+   }
+}
+
+.profile-header__text--bold {
+   font-weight: 700;
+   color: $darkColor;
+}
+
+.container-profile {
+   display: grid;
+   grid-template-columns: 1fr 1px 1fr 1fr;
+   grid-template-rows: repeat(3, auto);
+   grid-gap: 2rem;
+   padding-left: 5rem;
+   padding-top: 2rem;
+   @include responsive(768px) {
+      padding-left: 2rem;
+   }
+}
+
+.profile-order__title,
+.profile-order__text {
+   display: block;
+   font-size: 0.9rem;
+   text-transform: uppercase;
+   margin-top: 0.75rem;
+   margin-bottom: 0.75rem;
+   @include responsive(768px) {
+      font-size: 0.8rem;
+   }
+}
+
+.profile-order__separator {
+   background-color: $darkColor;
+}
+
+.profile-order__title {
+   font-weight: 700;
+   grid-column: 1 / 2;
+   grid-row: 1 / 2;
+}
+
+.profile-order__text {
+   font-weight: 400;
+}
+
+.profile-order__btn {
+   @include btn(0.3rem, 1rem, $principalColor, $lightPrincipalColor, 0.75rem);
+   display: inline-block;
+   margin-top: 0.7rem;
+   text-transform: uppercase;
+   transition: 0.3s;
+   will-change: background-color;
+}
+
+.profile-order__btn:hover {
+   background-color: $principalColorHover;
+   color: $colorWhite;
+}
+
+.profile-order__off {
+   padding: 0.5rem;
+}
+
+/* Profile Modified */
+
+.profile-header__modified-profile {
+   display: inline-block;
+   margin-top: 2rem;
+   margin-left: 5rem;
+   border: 1px solid $secondaryColor;
+   padding: 0.35rem 1.4rem;
+   text-transform: uppercase;
+   color: $secondaryColor;
+}
+
+.profile-header__form {
+   margin-top: 2rem;
+   display: grid;
+   grid-template-columns: repeat(2, 1fr);
+   grid-column-gap: 2rem;
+   margin-left: 5rem;
+   width: 80%;
+   @include responsive(768px) {
+      grid-template-columns: 1fr;
+      margin-left: 1rem;
+   }
+}
+
+.register-view__fieldset--submit {
+   margin-top: 2rem;
+}
+
+.profile-header__submit {
+   @include btn(0.45rem, 2rem, $principalColor, $lightPrincipalColor, 1rem);
+   text-transform: uppercase;
+   display: inline-block;
+   cursor: pointer;
+   transition: 0.3s;
+   will-change: background-color;
+}
+
+.profile-header__submit:hover {
+   background-color: $principalColorHover;
+}
+
+.register-view__label--recordar {
+   display: block;
+   padding-left: 0;
+}
+
+.profile-header__subgrid {
+   display: flex;
+   align-items: center;
+}

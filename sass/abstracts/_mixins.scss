@@ -1,0 +1,31 @@
+
+@mixin btn($padding-y, $padding-x, $bg-color, $color, $font-size) {
+    color: $color;
+    padding: $padding-y $padding-x;
+    font-size: $font-size;
+    border: none;
+    outline: none;
+    background-color: $bg-color;
+}
+
+@mixin input($borderColor, $bgColor, $textColor) {
+    border: 1px solid $borderColor;
+    background-color: $bgColor;
+    padding: 0.7rem;
+    outline: none;
+    display: block;
+    width: 100%;
+    color: $textColor;
+}
+
+@mixin responsive($size) {
+    @media screen and (max-width: $size) {
+        @content;
+    }
+}
+
+@mixin responsiveMin($size) {
+    @media screen and (min-width: $size) {
+        @content;
+    }
+}

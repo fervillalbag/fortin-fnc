@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+      integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog=="
+      crossorigin="anonymous" />
+   <link rel="stylesheet" href="./css/main.css">
+   <title>Fortín</title>
+</head>
+
+<body>
+
+   <nav class="menu-container">
+      <div class="container">
+         <div class="menu-logo">
+            <a href="./" class="menu-logo__link">
+               <img src="./images/logo-01.png" class="menu-logo__image">
+            </a>
+         </div>
+
+         <div class="menu-navigation__bars">
+            <i class="fas fa-bars"></i>
+         </div>
+
+         <div class="menu-navigation__close">
+            <i class="fas fa-times"></i>
+         </div>
+
+         <ul class="menu-navigation">
+            <li class="menu-navigation__item"><a href="#" class="menu-navigation__link">Ir a la web</a></li>
+            <li class="menu-navigation__item"><a href="./register.html" class="menu-navigation__link">Registrarme</a>
+            </li>
+            <li class="menu-navigation__item">
+               <a href="" class="menu-navigation__link menu-navigation__link--account" id="btnAccountDesktop"><i
+                     class="fas fa-user"></i> Mi cuenta</a>
+               <ul class="submenu-navigation__desktop">
+                  <li class="submenu-navigation__item"><a href="#" class="submenu-navigation__link">Mi perfil</a></li>
+                  <li class="submenu-navigation__item"><a href="./carrito.html" class="submenu-navigation__link">Mis
+                        pedidos</a></li>
+                  <li class="submenu-navigation__item"><a href="#" class="submenu-navigation__link">Quejas</a></li>
+               </ul>
+            </li>
+            <li class="menu-navigation__item">
+               <a href="#" class="menu-navigation__link menu-navigation__carrito">
+                  <i class="fas fa-shopping-cart"></i>
+                  <span class="menu-carrito__cant">2</span>
+               </a>
+            </li>
+            <li class="menu-navigation__item">
+               <a href="#" class="menu-navigation__link">
+                  <form action="#" class="menu-navigation__form">
+                     <div class="menu-navigation__fieldset">
+                        <input class="menu-navigation__input" type="text" name="busqueda" id="busqueda"
+                           placeholder="Buscar">
+                        <button href="#" class="menu-icon__search">
+                           <i class="fas fa-search"></i>
+                        </button>
+                     </div>
+                  </form>
+               </a> <!--  -->
+            </li> <!--  -->
+         </ul> <!--  -->
+      </div> <!--  -->
+   </nav>
+
+
+   <div class="navbar-off"></div>
+
+   <header class="header"></header>
+
+   <!-- Modal Summary -->
+   <section class="summaryBody active" id="summaryBody">
+      <div class="summaryBody__overlay" id="summaryOverlay"></div>
+
+      <header class="summaryBody__header">
+         <h3 class="summaryBody__title">Resumen de compras <span>(1)</span></h3>
+         <button class="summaryBody__close" id="btnSummaryClose">
+            <i class="fas fa-times"></i>
+         </button>
+      </header>
+
+      <!-- tr (productos) -->
+      <div class="summaryBody__item">
+         <div class="summaryBody__media">
+            <img src="./images/gaseosas-01.jpg" alt="" class="summaryBody__image">
+         </div>
+         <div class="summaryBody__info">
+            <span class="summaryBody__product">Gaseosas Citrus 300ml</span>
+            <span class="summaryBody__price">Gs. 85.000</span>
+
+            <div class="summaryBody__action">
+               <span class="summaryBody__cant">
+                  <i class="fas fa-times"></i>
+                  <span>100</span>
+               </span>
+               <button class="summaryBody__delete">
+                  <i class="fas fa-trash"></i>
+               </button>
+            </div>
+         </div>
+      </div>
+      <!-- /.tr -->
+
+      <!-- tr (resultado/total) -->
+      <div class="summaryTotal">
+         <div class="summaryTotal__name">
+            Subtotal
+         </div>
+         <div class="summaryTotal__price">
+            Gs. 9.000
+         </div>
+      </div>
+      <!-- /.tr -->
+
+      <footer class="summaryBody__footer">
+         <a href="./carrito.html" class="summaryBody__button">Ver carrito</a>
+         <a href="./successful.html" class="summaryBody__button">Finalizar compra</a>
+      </footer>
+
+   </section>
+
+   <div class="summaryBtn">
+      <button type="button" class="summaryBtn__button" id="summaryButton">
+         <i class="fas fa-tags"></i>
+      </button>
+   </div>
+
+   <section class="cart">
+      <div class="cart__header">
+         <h3 class="cart__title">Tu Carrito</h3>
+      </div>
+
+
+      <div class="container">
+         <h3 class="succesful-title">Compra realizada satisfactoriamente <i class="fas fa-check"></i></h3>
+      </div>
+
+   </section>
+
+   <footer class="footer">
+      <div class="container">
+         <div class="footer-logo">
+            <a href="#" class="footer-logo__link">
+               <img src="./images/logo-02.png" alt="" class="footer-logo__image">
+            </a>
+         </div>
+         <ul class="footer-social">
+            <li class="footer-social__item"><a href="#" class="footer-social__link"><i
+                     class="fab fa-facebook-square"></i></a></li>
+            <li class="footer-social__item"><a href="#" class="footer-social__link"><i
+                     class="fab fa-instagram-square"></i></a></li>
+            <li class="footer-social__item"><a href="#" class="footer-social__link"><i
+                     class="fab fa-twitter-square"></i></a></li>
+            <li class="footer-social__item"><a href="#" class="footer-social__link"><i class="fab fa-whatsapp"></i></a>
+            </li>
+         </ul>
+      </div>
+      <div class="footer-copy">
+         <span class="footer-copy__span">Diseño y desarrollo por <a href="#" class="footer-copy__link"
+               target="_blank">FINCREATIVO</a></span>
+      </div>
+   </footer>
+
+   <script src="./js/navigation.js"></script>
+   <script src="./js/summary.js"></script>
+
+</body>
+
+</html>

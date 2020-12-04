@@ -1,0 +1,149 @@
+/* Section Login */
+
+.login {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 3rem;
+    padding-top: 4rem;
+    background-color: $lightPrincipalColor;
+}
+
+.login__first-title,
+.login__second-title {
+    display: block;
+    color: $darkColor;
+    font-size: 1.3rem;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.login__first-title {
+    font-weight: 400;
+}
+
+.login__second-title {
+    margin-top: 0.8rem;
+    font-weight: 700;
+}
+
+.login-action {
+    display: flex;
+    justify-content: center;
+    margin-top: 2.5rem;
+    margin-bottom: 2.5rem;
+    @include responsive(850px) {
+        flex-direction: column;
+    }
+}
+
+.login-action__button:first-of-type {
+    @include responsive(850px) {
+        margin-bottom: 1rem;
+    }
+}
+
+.login-action__button {
+    display: block;
+    @include btn(0.7rem, 5rem, $principalColor, $lightPrincipalColor, 1.4rem);
+    margin-right: 1rem;
+    margin-left: 1rem;
+    text-transform: uppercase;
+    transition: 0.3s;
+    will-change: background-color;
+    text-align: center;
+    @include responsive(850px) {
+        margin-left: 0;
+        margin-right: 0;
+    }
+    @include responsive(480px) {
+        font-size: 1rem;
+    }
+}
+
+.login-action__button:hover {
+    background-color: $principalColorHover;
+    color: $lightPrincipalColor;
+}
+
+/* Login View */
+
+.login-view {
+    padding-top: 2rem;
+    padding-bottom: 3rem;
+    background-color: lighten($principalColor, 20%);
+}
+
+.login-view__title {
+    font-size: 1.6rem;
+    font-weight: 400;
+    text-align: center;
+    margin-top: 0.5rem;
+    text-transform: uppercase;
+    color: $lightPrincipalColor;
+    margin-top: 0;
+}
+
+.login-view__form {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    grid-column-gap: 3rem;
+    @include responsive(900px) {
+        grid-column-gap: 1.5rem;
+    }
+    @include responsive(768px) {
+        grid-template-columns: repeat(2, 1fr);
+        grid-row-gap: 1.2rem;
+    }
+    @include responsive(576px) {
+        grid-template-columns: 1fr;
+        grid-row-gap: 1.2rem;
+    }
+}
+
+.login-view__input {
+    @include input($lightPrincipalColor, transparent, $lightPrincipalColor)
+}
+
+::placeholder {
+    color: darken($lightPrincipalColor, 15%);
+    text-transform: uppercase;
+}
+
+.login-view__button {
+    @include btn(0.5rem, 3rem, $principalColor, $colorWhite, 1.4rem);
+    display: block;
+    width: 100%;
+    font-weight: 700;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: 0.3s;
+    will-change: background-color;
+}
+
+.login-view__button:hover {
+    background-color: $principalColorHover;
+    color: $colorWhite;
+}
+
+/* Recover Password */
+
+.recover-password {
+    background-color: $lightPrincipalColor;
+    padding-top: 2rem;
+    padding-bottom: 4rem;
+}
+
+.recover-password__span {
+    display: block;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 300;
+    color: $darkColor;
+}
+
+.recover-password__link {
+    color: $tertiaryColor;
+    font-weight: 500;
+}
