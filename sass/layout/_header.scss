@@ -1,36 +1,44 @@
-
-
 .header {
-    background-image: url('../images/banner-carrito-03.jpg');
-    background-position: center;
-    background-repeat: no-repeat;
+  background-image: url("../images/banner-carrito-03.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 420px;
+  position: relative;
+
+  @media (max-width: 768px) {
+    min-height: 100px;
     background-size: cover;
-    min-height: 420px;
-    position: relative;
+    background-position: left center;
+  }
 
-    @media screen and (min-width: 1440px) {
-        min-height: 500px;
-    }
+  @media screen and (min-width: 1440px) {
+    min-height: 500px;
+  }
 
-    @media screen and (min-width: 1700px) {
-        min-height: 560px;
-    }
+  @media screen and (min-width: 1700px) {
+    min-height: 560px;
+  }
 
-    @media screen and (min-width: 1920px) {
-        min-height: 600px;
-    }
+  @media screen and (min-width: 1920px) {
+    min-height: 600px;
+  }
 
-    @media screen and (min-width: 2120px) {
-        min-height: 700px;
+  @media screen and (min-width: 2120px) {
+    min-height: 700px;
+  }
+
+  &:before {
+    content: "";
+    display: block;
+    width: 100%;
+    position: absolute;
+    bottom: -1.8rem;
+    height: 1.8rem;
+    background-color: #000;
+
+    @media (max-width: 768px) {
+      display: none;
     }
-    
-    &:before {
-        content: '';
-        display: block;
-        width: 100%;
-        position: absolute;
-        bottom: -1.8rem;
-        height: 1.8rem;
-        background-color: #000;
-    }
+  }
 }
