@@ -1,0 +1,23 @@
+{
+  "name": "fortin",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "comp:sass": "node-sass -w sass/main.scss css/main.css --output-style compressed"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fervillalbag/fortin-fnc.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/fervillalbag/fortin-fnc/issues"
+  },
+  "homepage": "https://github.com/fervillalbag/fortin-fnc#readme",
+  "dependencies": {
+    "node-sass": "^5.0.0"
+  }
+}

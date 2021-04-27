@@ -2,3 +2,4 @@
 *.pdf
 *.config
 *.md
+node_modules

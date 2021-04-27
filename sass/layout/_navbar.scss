@@ -24,11 +24,29 @@
    display: flex;
    align-items: center;
    margin: 0;
-   display: none;
    justify-self: end;
+   flex-direction: column;
+   justify-content: center;
+   background-color: #fff;
+   position: fixed;
+   top: 0;
+   left: 0;
+   width: 100vw;
+   height: 100vh;
+   transform: translateY(-2000px);
+
+   &.active {
+      transform: translateY(0);
+   }
 
    @include responsiveMin(900px) {
       display: flex;
+      flex-direction: row;
+      position: initial;
+      background-color: transparent;
+      transform: translateY(0);
+      width: initial;
+      height: initial;
    }
 }
 
@@ -69,6 +87,10 @@
    border: none;
    background-color: $lightPrincipalColor;
    border-radius: 2rem;
+
+   @media (max-width: 768px) {
+      width: 90%;
+   }
 }
 
 .menu-icon__search {
@@ -80,6 +102,10 @@
    border: none;
    outline: none;
    cursor: pointer;
+
+   @media (max-width: 768px) {
+      right: 2rem;
+   }
 }
 
 /**/
@@ -112,6 +138,9 @@
       display: block;
       width: 5rem;
       justify-self: end;
+      position: relative;
+      z-index: 20;
+      text-align: center;
    }
 
    i.fas {
