@@ -3,6 +3,7 @@
 .carrito-table {
     margin-top: 4rem;
     margin-bottom: 4rem;
+    // width: 30rem;
 }
 
 .carrito-table img {
@@ -15,8 +16,11 @@
 }
 
 .carrito-table th, .carrito-product, .carrito-subtotal, .carrito-price {
-    padding: 0;
+    // padding: 1rem;
     line-height: 50px;
+}
+.carrito-subtotal {
+    padding: 0.5rem !important;
 }
 
 .carrito-cant {
@@ -28,11 +32,13 @@
     padding: 0 0;
     height: 50px;
     width: auto;
+    padding: 1rem;
 }
 
 .carrito-item {
     margin-top: 5rem;
-}
+    // width: 26rem !important;
+}   
 
 .carrito-cant__span {
     display: block;

@@ -106,6 +106,10 @@
   padding-right: 2rem;
   position: relative;
 
+  @include responsive(768px) {
+    padding: 0;
+  }
+
   .container {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -120,6 +124,8 @@
     }
     @include responsive(768px) {
       grid-template-columns: 1fr;
+      width: 92%;
+      margin: 0 auto;
     }
   }
 
@@ -152,6 +158,10 @@
   padding-bottom: 2rem;
   display: flex;
   justify-content: space-between;
+
+  @include responsive(768px) {
+    padding: 2rem;
+  }
 }
 
 .products-bread__span {
